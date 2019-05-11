@@ -8,6 +8,8 @@ $updaters = UpdaterRegistry::getUpdaters();
 
 $separator = "**************************************************";
 
+echo "Running updates ...\n\n";
+
 foreach($updaters as $updater){
 	$updateDescription = $updater->getUpdates();
 	
